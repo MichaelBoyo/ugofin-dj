@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'ugofinance.wsgi.application'
 DATABASES = {
     'default':{
             'ENGINE': 'djongo',
-            'NAME': 'ugofinance',
+            'NAME': env('DB'),
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
-                'host': 'mongodb+srv://jake:dQljZgVzeOnVsMZE@merndb.uls2ewf.mongodb.net/ugofinance?retryWrites=true&w=majority'
+                'host': env('URI')
             }  
         }
 }
