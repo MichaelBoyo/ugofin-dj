@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn ugofinance.wsgi
+web: gunicorn ugofinance.wsgi
